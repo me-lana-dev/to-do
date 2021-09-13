@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.btn {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  background: pink;
+  box-shadow: none;
+  color: #fff;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  line-height: 22px;
+  text-align: center;
+  font-size: 1.5rem;
+  text-shadow: none;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.btn:hover {
+  background: red;
+  color: #fff;
+}
+.todoList > li:hover {
+  transform: translateY(-3px);
+}
+.done {
+  text-decoration: line-through;
+  color: #aaa;
+}
+.form {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-self: space-between;
+}
+.form input {
+  border-radius: 4px;
+  height: 2rem;
+  border: 1px solid #e4e4e4;
+  background: #fff;
+  flex-grow: 1;
+  padding: 0 1rem;
+}
+.form input:focus {
+  outline: none !important;
+  border-color: rgb(0, 130, 230);
+}
+.form button {
+  background: rgb(0, 130, 230);
+  border: none;
+  border-radius: 4px;
+  width: 100px;
+  height: 2rem;
+  flex-shrink: 0;
+  margin-left: 15px;
+  color: #fff;
+  line-height: 2rem;
+}
+.form button:hover {
+  cursor: pointer;
+  background: #026fc3;
+}
+
+/* lOADER */
+.lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgb(0, 130, 230);
+  animation: lds-grid 1.2s linear infinite;
+}
+.lds-grid div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
